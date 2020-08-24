@@ -1,14 +1,16 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
+    <Emitter />
   </q-page>
 </template>
 
 <script>
+import Emitter from 'components/Emitter.vue';
+
 export default {
   name: 'PageIndex',
+  components: {
+    Emitter,
+  },
 };
 </script>
